@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxime Piau</title>
+    <link  type="text/css" rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header_menu">
+        <left>
+            <ul>
+                <li><a href="#">MP</a></li>
+            </ul>
+        </left>
+        <right>
+            <div class="menu-toggle"onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <a href="#Home"><li>Home</li></a>
+                <a href="#Qui"><li>Qui suis-je ?</li></a>
+                <a href="#Parcours"><li>Mon parcours</li></a>
+                <a href="#Experience"><li>Mes Experiences</li></a>
+                <a href="#Projets"><li>Mes projets</li></a>
+                <a href="#Contact"><li>Contact</li></a>
+            </ul>
+        </right>
+    </div>
+    <div class="home" id="Home">
+        <left >M</left>
+        <right>
+            <titre>Hello !</titre>
+            <texte>Je suis Maxime Piau, <br>
+                étudiant en 1ère année<br>
+                d'informatique à Nantes 
+            </texte>
+        </right>
+        <id="Home"></id>
+    </div>
+    <div class="bar"id="Qui"></div>
+    <div class="qui" >
+        <titre>Qui-suis-je ?</titre>
+        <container>Je suis Maxime Piau et j’ai 19 ans.</container>
+        <container>Je suis actuellement étudiant en première année d’informatique à Nantes.</container>
+        <container>J’adore tous les jeux de logique, la lecture et le vélo.</container>
+        <container>Dans l’informatique, j’apprécie particulièrement l’esprit d’équipe.</container>
+        <container>Les différents projets développés durant mes études m’ont permis d’acquérir de la rigueur</container>        
+        <container>Ce qui me fait vibrer, c’est de partir de 0 et de voir son projet grandir.</container>
+    </div>
+    <div class="bar" id="Parcours"></div>
+    <div class="parcours">
+        <titre>Mon Parcours</titre>
+        <container>
+            <boxleft><h2>Collège René Guy Cadou  -  Ancenis  -  2016/2020</h2>
+                <h3>C'est durant mon année de 3ème que j'ai découvert ma passion pour l'informatique. <br>
+                    C'est pourquoi j'ai réalisé mon stage de 3ème dans un service informatique.</h3></boxleft>
+            <boxvide></boxvide>
+            <boxvide></boxvide>
+            <boxright><h2>Lycée Polyvalent Joubert Maillard  -  Ancenis  -  2020/2023</h2>
+            <h3>J'ai tout naturellement choisit de suivre les spécialités Mathématiques et NSI.</h3>
+            <h3>J'ai eu l'occasion de découvrir les bases de l'informatique et de développé</h3>
+            <h3> quelques minis jeux en Python ainsi que des sites en HTML</h3></boxright>
+            <boxleft><h2>IUT Nantes  -  BUT informatique  -  </h2>
+            <h3>J’ai découvert divers langages informatiques en BUT.</h3>
+            <h3>J’ai donc réalisé plusieurs projets comme des sites web (HTML et CSS), des requêtes en SQL, des mini-jeux en Golang, en Python et en Kotlin.
+                </h3></boxleft>
+            <boxvide></boxvide>
+        </container>
+    </div>
+    <div class="bar" id="Experience"></div>
+    <div class="expContainer">
+        <h1>Mes experiences</h1>
+        <div class="expBoxContainer">
+            <div class="expBox">
+                <div class="expSVGContainer"id="inver"><img src="assets/logo_python.png" width="55%" filter:invert(1)></div>
+                <div class="expNameContainer">
+                    <p>Python</p>
+                </div>
+                <div class="expBarContainer">
+                    <div class="expBarWrap">
+                        <div class="expBarInner"id="python"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="expBox">
+                <div class="expSVGContainer"id="satur"><img src="assets/logo_html.png" width="55%" filter:saturate(0%)></div>
+                <div class="expNameContainer">
+                    <p>HTML</p>
+                </div>
+                <div class="expBarContainer">
+                    <div class="expBarWrap">
+                        <div class="expBarInner"id="html" ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="expBox">
+                <div class="expSVGContainer"id="satur"><img src="assets/logo_kotlin.png" width="55%" filter:invert(1)></div>
+                <div class="expNameContainer">
+                    <p>Kotlin</p>
+                </div>
+                <div class="expBarContainer">
+                    <div class="expBarWrap">
+                        <div class="expBarInner"id="kotlin"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="expBox">
+                <div class="expSVGContainer"id="satur"><img src="assets/logo_css.png" width="55%" filter:invert(1)></div>
+                <div class="expNameContainer">
+                    <p>CSS</p>
+                </div>
+                <div class="expBarContainer">
+                    <div class="expBarWrap">
+                        <div class="expBarInner"id="css" ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="expBox">
+                <div class="expSVGContainer"id="satur"><img src="assets/logo_golang.png" width="55%" filter:invert(1)></div>
+                <div class="expNameContainer">
+                    <p>Golang</p>
+                </div>
+                <div class="expBarContainer">
+                    <div class="expBarWrap">
+                        <div class="expBarInner"id="golang"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="expBox">
+                <div class="expSVGContainer"id="satur"><img src="assets/logo_sql.png" width="55%" filter:invert(1)></div>
+                <div class="expNameContainer">
+                    <p>SQL</p>
+                </div>
+                <div class="expBarContainer">
+                    <div class="expBarWrap">
+                        <div class="expBarInner"id="sql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bar" id="Projets"></div>
+    <div class="projets">
+        <titre>Mes Projets</titre>
+        <container>
+            <box><h2>Jeu des allumettes </h2>
+                <h3>réalisé en php en 2023</h3></box>
+            <box><h2>Mastermind</h2>
+            <h3>réalisé en python en 2023</h3></box>
+            <box><h2>Morpion</h2>
+            <h3>réalisé en python en 2021</h3></box>
+        </container>
+    </div>
+    <div class="bar" id="Contact"></div>
+    <div class="contact">
+        <titre>Contact</titre>
+        <box>
+            <div class="container">
+                <div class="contact-info">
+                    <h2>Mes Informations</h2>
+                    <p>Email: maxime.piau04@gmail.com</p>
+                    <p>Ville: Ancenis 44150</p>
+                    <a href="assets/CV_MaximePiau.pdf" download><button>Télécharger mon CV</button></a>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" action="#" method="post">
+                        <label for="name">Votre Nom</label>
+                        <input type="text" id="name" name="name" placeholder="Votre name.." required>
+                        
+                        <label for="email">Votre Email</label>
+                        <input type="email" id="email" name="email" placeholder="Votre email.." required>
+                        
+                        <label for="message">Votre Message</label>
+                        <textarea id="message" name="message" placeholder="Votre message..." style="height:100px" required></textarea>
+                        
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+            </div>
+        </box>
+    </div>
+
+</body>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    alert("Fonctionnalité non implémentée");
+});
+</script>
+<script>
+    function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+    document.querySelectorAll('.menu a').forEach(item => {
+    item.addEventListener('click', function() {
+        var menu = document.querySelector('.menu');
+        menu.classList.remove('active');
+    });
+});
+document.addEventListener('click', function(event) {
+    var menu = document.querySelector('.menu');
+    if (!menu.contains(event.target) && !event.target.classList.contains('menu-toggle')) {
+        menu.classList.remove('active');
+    }
+});
+</script>
