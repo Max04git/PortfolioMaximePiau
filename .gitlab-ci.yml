@@ -1,15 +1,20 @@
-# The Docker image that will be used to build your app
-image: node:lts
-
-
-# Étapes à exécuter avant le script de build
-before_script:
-  - npm install # ou toute autre étape d'installation nécessaire
-
-# Définition du job "pages" pour déployer votre site sur GitLab Pages
+image: node
 pages:
+  stage: deploy
+  cache:
+    key:
+      files:
+        - package-lock.json
+      prefix: npm
+    paths:
+      - node_modules/
   script:
-    - npm run build # ou toute autre commande pour construire votre site
+    - npm install
+    - npm run build
+    - cp -a dist/. public/
   artifacts:
     paths:
-      - public/ # Le dossier contenant les fichiers à publier
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
