@@ -3,10 +3,5 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
-  {
-  "scripts": {
-    "build": "cp Index.html public/ && cp styles.css public/"
-  }
-}
+  "type": "module"
 }
