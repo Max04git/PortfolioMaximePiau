@@ -1,12 +1,7 @@
 {
-  "homepage": "https://portfolio-school-stuff-semestre-2-733b3be122a3cda6d3ac405c27cc8.univ-nantes.io",
+  "homepage": "https://portfolio-e234117a-b023ae12782dc686ff08e4c8fbcc21ecedbc051ff5cd.univ-nantes.io",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  }
+  "type": "module"
+}
