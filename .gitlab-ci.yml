@@ -1,20 +1,14 @@
-image: node
+image: node:16.5.0
+
 pages:
   stage: deploy
-  cache:
-    key:
-      files:
-        - package.json
-      prefix: npm
-    paths:
-      - node_modules/
   script:
-    - npm install
-    - npm run build
-    - cp -a dist/. public/
+    - mkdir public
+    - find . -maxdepth 1 -not -name 'public' -exec cp -r {} public/ \;
   artifacts:
     paths:
       - public
-  rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  only:
+    - master
+
 
