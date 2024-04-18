@@ -24,14 +24,14 @@ body{
 }
 .header_menu left{
     display: flex;
-    width: 50%;
+    width: 5%;
     height: auto;
     justify-content: start;
     align-items: center;
 }
 .header_menu right{
     display: flex;
-    width: 50%;
+    width: 95%;
     height: auto;
     justify-content: end;
     align-items: center;
@@ -90,6 +90,7 @@ body{
     padding: 3%;
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
 }
 .home titre{
     display: flex;
@@ -238,13 +239,7 @@ body{
 }
 .expSVGContainer img{
     display: flex;
-}
-#inver{
-    filter:invert(1);
-}
-#satur{
     filter:grayscale(100%);
-
 }
 .expNameContainer{
     width: 35%;
@@ -261,22 +256,22 @@ body{
     justify-content: center;
 }
 #python{
-    width: 50%;
+    width: 85%;
 }
 #html{
-    width: 90%;
+    width: 80%;
 }
 #kotlin{
-    width: 45%;
-}
-#css{
-    width: 70%;
-}
-#golang{
     width: 40%;
 }
+#css{
+    width: 65%;
+}
+#golang{
+    width: 35%;
+}
 #sql{
-    width: 60%;
+    width: 655;
 }
 .expBarWrap{
     height: 40%;
@@ -472,7 +467,7 @@ body{
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .header_menu right {
         width: 100%;
         justify-content: end;
@@ -520,6 +515,7 @@ body{
     .home right{
         font-weight: 1000;
         padding-bottom: 50px;
+        margin-top: -25px;
     }
     .home titre{
         justify-content: center;
