@@ -239,7 +239,6 @@ body{
 }
 .expSVGContainer img{
     display: flex;
-    filter:grayscale(100%);
 }
 .expNameContainer{
     width: 35%;
@@ -316,6 +315,7 @@ body{
     font-weight: 400;
     flex-direction: center;
     align-items: start;
+    min-height: 60px;
 }
 .projets titre{
     margin: 15px 3%;
@@ -325,15 +325,19 @@ body{
     font-weight: 800;
 }
 .projets h2{
+    display: flex;
     font-size: 1.3rem;
     font-weight: 500;
     margin: 0;
+    width: 10%;
 }
 .projets h3{
+    display: flex;
     font-size: 1.2rem;
     font-weight: 500;
     margin: 0;
     color: #888888;
+    width: 80%;
 }
 
 
@@ -402,8 +406,9 @@ body{
   .contact-form textarea {
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #6c6c6c;
     border-radius: 3px;
+    background-color: #2b2b2b;
 }
 .contact-form input[type="submit"] {
     background-color: #007bff;
@@ -580,6 +585,24 @@ body{
     flex-direction: column;
     align-items: center;
     }
+    .projets h2{
+        display: flex;
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    .projets h3{
+        display: flex;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin: 0;
+        color: #888888;
+        width: 100%;
+    }
+    
 
     .contact-info {
         justify-content: center;
