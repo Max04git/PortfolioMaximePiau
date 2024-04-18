@@ -315,7 +315,7 @@ body{
     font-weight: 400;
     flex-direction: center;
     align-items: start;
-    min-height: 60px;
+    min-height: 100px;
 }
 .projets titre{
     margin: 15px 3%;
@@ -329,7 +329,7 @@ body{
     font-size: 1.3rem;
     font-weight: 500;
     margin: 0;
-    width: 10%;
+    width: 30%;
 }
 .projets h3{
     display: flex;
@@ -338,6 +338,14 @@ body{
     margin: 0;
     color: #888888;
     width: 80%;
+}
+.projets imagebox{
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    width: 40%;
+    justify-content: center;
 }
 
 
@@ -601,6 +609,17 @@ body{
         margin: 0;
         color: #888888;
         width: 100%;
+    }
+    .projets imagebox{
+        display: flex;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin: 0;
+        justify-content: center;
+        width: 100%;
+    }
+    .projets img{
+        width: 50%;
     }
     
 
