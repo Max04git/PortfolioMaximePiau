@@ -27,7 +27,6 @@ body{
     width: 10%;
     height: auto;
     font-weight: 600;
-    justify-content: center;
     align-items: center;
 }
 .header_menu right{
@@ -262,16 +261,16 @@ body{
     width: 80%;
 }
 #kotlin{
-    width: 40%;
+    width: 48%;
 }
 #css{
     width: 65%;
 }
 #golang{
-    width: 35%;
+    width: 38%;
 }
 #sql{
-    width: 655;
+    width: 60%;
 }
 .expBarWrap{
     height: 40%;
