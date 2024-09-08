@@ -204,6 +204,13 @@ body{
     margin: 0;
     color: #888888;
 }
+
+.parcours h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+}
+
 .expContainer{
     display: flex;
     flex-direction: column;
@@ -216,12 +223,21 @@ body{
     grid-auto-rows: minmax(100px, auto);
 }
 .expContainer h1{
-    margin-bottom: 80px;
+    margin-bottom: 10px;
     padding: 0;
     font-size: 2rem;
     color: #eeeeee;
     justify-content: center;
     font-weight: 800;
+}
+.expContainer h3{
+    margin-bottom: 30px;
+    margin-top: 50px;
+    padding: 0;
+    font-size: 1.6rem;
+    color: #888888;
+    justify-content: center;
+    font-weight: 600;
 }
 .expBox{
     display: flex;
@@ -261,16 +277,16 @@ body{
     width: 80%;
 }
 #kotlin{
-    width: 48%;
+    width: 55%;
 }
 #css{
-    width: 65%;
+    width: 75%;
 }
 #golang{
-    width: 38%;
+    width: 50%;
 }
 #sql{
-    width: 60%;
+    width: 65%;
 }
 .expBarWrap{
     height: 40%;
@@ -288,6 +304,64 @@ body{
     height: 100%;
     border-radius: 10px;
 }
+
+.environnementtravail{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+    color: #eeeeee;
+    flex-direction: column;
+}
+.environnementtravail container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+.environnementtravail box{
+    display: flex;
+    justify-content: space-between;
+    background-color: #444444;
+    border-radius: 10px;
+    margin: 5px 7.6%;
+    font-size: 1.5rem;
+    padding: 1.5% 1%;
+    font-weight: 400;
+    align-items: center;
+}
+.environnementtravail titre{
+    margin: 15px 3%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+}
+.environnementtravail h2{
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    margin-right: 8px;
+    width: 30%;
+}
+.environnementtravail h3{
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    color: #888888;
+    width: 80%;
+}
+.environnementtravail imagebox{
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    width: 40%;
+    justify-content: center;
+}
+
 
 .projets{
     display: flex;
@@ -333,13 +407,24 @@ body{
     margin-right: 8px;
     width: 30%;
 }
-.projets h3{
+/*<voirplus>Voir le code sur Gitlab</voirplus>*/
+.projets description{
     display: flex;
     font-size: 1.2rem;
     font-weight: 500;
     margin: 0;
     color: #888888;
     width: 80%;
+    flex-direction: column;
+}
+
+.projets a{
+    color: #ffcdcd;
+    text-decoration: none;
+}
+.projets voirplus{
+    color: #ffcdcd;
+    text-decoration: underline;
 }
 .projets imagebox{
     display: flex;
